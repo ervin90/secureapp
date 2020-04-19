@@ -3,7 +3,15 @@
 Request: Transform java app https://github.com/hansonhsc/loan-quote
  to java web app
 
-**The app has been ported as a spring boot web application.** For usage a simple client application was written in vanilla JavaScript to demonstrate the point.
+**The app has been ported as a spring boot web application.** 
+ To demonstrate the point, a simple client application was written in vanilla JavaScript. You can find the link below.
+
+The input file **market.csv** has been ported in a database table called **prestatori**. The app is using **h2** in memory database. To access the db you can go to `http://localhost:8080/h2-console` and input:
+- JDBC url: jdbc:h2:mem:challengedb
+- Username: challenge
+- Password: password
+
+
 ## Usage
 - Use maven to produce `jar` package of the app:
 ```
