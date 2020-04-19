@@ -13,12 +13,17 @@ The input file **market.csv** has been ported in a database table called **prest
 
 
 ## Usage
+From app's main directory:
 - Use maven to produce `jar` package of the app:
 ```
 mvn install
 ```
+- Run the application with the command:
+```
+java -jar target/secureapp-0.0.1-SNAPSHOT.jar
+```
 - Open `http://localhost:8080/index.html` to access the client.
 
 ## Improvements
-- Secure the app. To secure the app we can simply use the spring security module. The simplest way is to use basic authentication, where the client needs to send the user e password when calls authenticated apis. The requirement in this case is to use **https** comunication because otherwise we would be exposing credentials in plain text. Authorization can be handled by assciaating paths to roles which the user must have to access a particular path.
+- Secure the app. To secure the app we can simply use the spring security module. The simplest way is to use basic authentication, where the client needs to send the user and password when calls authenticated apis. The requirement in this case is to use **https** comumnication because otherwise we would be exposing credentials in plain text. Authorization can be handled by associating paths to roles which the user must have to access a particular path.
 - Implement unit tests.
