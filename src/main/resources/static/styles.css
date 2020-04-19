@@ -1,0 +1,15 @@
+.header{
+    height: 100px; 
+    background-color: #2bbbad;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+    font-size: xx-large;
+    color: aliceblue;  
+}
+
+.content{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+}

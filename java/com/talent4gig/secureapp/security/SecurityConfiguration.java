@@ -25,12 +25,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(final HttpSecurity http) throws Exception {
-		http.csrf().disable();
-		http.headers().xssProtection();
-		http.authorizeRequests().antMatchers("/books/**").access("hasRole('USER')");
-		http.authorizeRequests().antMatchers("/admin/books/**").access("hasRole('ADMIN')").anyRequest().authenticated()
-				.and().httpBasic().authenticationEntryPoint(basicAuthenticationEntryPoint).and().sessionManagement()
-				.sessionCreationPolicy(SessionCreationPolicy.NEVER);
+//		http.csrf().disable();
+//		http.headers().xssProtection();
+//		http.authorizeRequests().antMatchers("/books/**").access("hasRole('USER')");
+//		http.authorizeRequests().antMatchers("/admin/books/**").access("hasRole('ADMIN')").anyRequest().authenticated()
+//				.and().httpBasic().authenticationEntryPoint(basicAuthenticationEntryPoint).and().sessionManagement()
+//				.sessionCreationPolicy(SessionCreationPolicy.NEVER);
 	}
 
 	@Autowired
