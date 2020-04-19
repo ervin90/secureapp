@@ -13,7 +13,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="styles.css" />
+	<script src="calculate.js"></script>
   </head>
   <body>
     <div class="header">
@@ -37,7 +38,7 @@
 	
 			<button
 			  id="demo"
-			  onclick="myFunction()"
+			  onclick="calculateAmount()"
 			  type="submit"
 			  class="btn btn-primary"
 			  style="margin-top: 20px;"
@@ -48,38 +49,18 @@
 		<div class="col-md-6">
 			<div>
 				<label for="rate">Rate:</label>
-				<span id="rate">test</span>
+				<span id="rate"></span>
 			</div>
 			<div>
 				<label for="monthlyPayment">Monthly payment:</label>
-				<span id="monthlyPayment">test</span>
+				<span id="monthlyPayment"></span>
 			</div>
 			<div>
 				<label for="totalPayment">Total payment:</label>
-				<span id="totalPayment">test</span>
+				<span id="totalPayment"></span>
 			</div>
 		</div>
       </div>
     </div>
-
-    <script>
-      function myFunction() {
-		var amount = document.getElementById("requestedAmount").value;
-		var url = "http://localhost:8080/loans/calculate?amount=" + amount;
-        fetch(url)
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (data) {
-			console.log(data);
-			document.getElementById("rate").textContent = data.rate;
-			document.getElementById("monthlyPayment").textContent= data.monthlyPayment;
-			document.getElementById("totalPayment").textContent=data.totalPayment;
-          })
-          .catch(function () {
-            console.log("Error occured");
-          });
-      }
-    </script>
   </body>
 </html>
