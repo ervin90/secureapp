@@ -13,8 +13,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-	<link rel="stylesheet" href="styles.css" />
-	<script src="calculate.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="calculate.js"></script>
   </head>
   <body>
     <div class="header">
@@ -26,40 +26,40 @@
         Loan details
       </div>
       <div class="row card-body">
-		<div class="col-md-6">
-			<label for="requestedAmount">Loan amount</label>
-			<div>
-			  <input
-				type="text"
-				id="requestedAmount"
-				placeholder="Enter loan amount"
-			  />
-			</div>
-	
-			<button
-			  id="demo"
-			  onclick="calculateAmount()"
-			  type="submit"
-			  class="btn btn-primary"
-			  style="margin-top: 20px;"
-			>
-			  Submit
-			</button>
-		</div>
-		<div class="col-md-6">
-			<div>
-				<label for="rate">Rate:</label>
-				<span id="rate"></span>
-			</div>
-			<div>
-				<label for="monthlyPayment">Monthly payment:</label>
-				<span id="monthlyPayment"></span>
-			</div>
-			<div>
-				<label for="totalPayment">Total payment:</label>
-				<span id="totalPayment"></span>
-			</div>
-		</div>
+        <div class="col-md-6">
+          <label for="requestedAmount">Loan amount</label>
+          <div>
+            <input
+              type="text"
+              id="requestedAmount"
+              placeholder="Enter loan amount"
+            />
+          </div>
+
+          <button
+            id="demo"
+            onclick="calculateAmount()"
+            type="submit"
+            class="btn btn-primary"
+            style="margin-top: 20px;"
+          >
+            Calculate
+          </button>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <label for="rate">Rate:</label>
+            <span id="rate"></span>
+          </div>
+          <div>
+            <label for="monthlyPayment">Monthly payment:</label>
+            <span id="monthlyPayment"></span>
+          </div>
+          <div>
+            <label for="totalPayment">Total payment:</label>
+            <span id="totalPayment"></span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
